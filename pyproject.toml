@@ -23,7 +23,3 @@ dependencies = [
 name = "pytorch-cu124"
 url = "https://download.pytorch.org/whl/cu124"
 explicit = true
-
-[project.scripts]
-run = "python app.py"
-build = "pyinstaller --noconsole --name whisper_transcriber app.py"

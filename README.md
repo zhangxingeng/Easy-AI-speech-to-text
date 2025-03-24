@@ -8,9 +8,9 @@
 
 ## 🧰 What You’re Building
 
-- 🎙️ Speak into your microphone
-- 📋 Whisper transcribes what you say
-- 🧠 It uses advanced AI (just like in sci-fi movies)
+- 🎙️ Speak into your microphone  
+- 📋 Whisper transcribes what you say  
+- 🧠 It uses advanced AI (just like in sci-fi movies)  
 - 💾 It puts the result straight into your clipboard (you can paste it anywhere!)
 
 ---
@@ -18,8 +18,9 @@
 ## 🧑‍💻 Step 0: The Mission Terminal (aka Your Computer)
 
 Make sure you're on **Windows 11** and you have:
-- Internet access 🌐
-- A working microphone 🎤
+
+- Internet access 🌐  
+- A working microphone 🎤  
 - Some curiosity 😎
 
 Let’s install your tools!
@@ -31,7 +32,7 @@ Let’s install your tools!
 ### 🟢 Option A (Easiest): Get Python from Microsoft Store
 
 1. Open the **Microsoft Store**
-2. Search for **“Python 3.11”**
+2. Search for **“Python 3.13”**
 3. Click **Install** on the official one from the Python Software Foundation
 4. Open **Command Prompt** (Press `Win + R`, type `cmd`, hit Enter)
 5. Type:
@@ -42,29 +43,15 @@ python --version
 
 You should see something like:
 
-```
-Python 3.11.x
+```console
+Python 3.13.x
 ```
 
 ✅ If that shows up, congrats! Python is online.
 
 ---
 
-## 🧬 Step 2: Install `uv` (Fast Package Installer)
-
-Now we’ll install `uv` — think of it as a **cyber-injector** that zaps your system with all the tools Whisper needs.
-
-In your **Command Prompt**, type:
-
-```bash
-pip install uv
-```
-
-Wait a moment... once complete, you now have a superfast installer 🚀
-
----
-
-### 🧩 Step 3: Clone the Project from GitHub
+## 🧩 Step 2: Clone the Project from GitHub
 
 In **Command Prompt** or **PowerShell**, run:
 
@@ -77,19 +64,16 @@ cd whisper_voice_to_text_converter
 
 ---
 
-Let me know if you want a script to automatically install everything after the clone (like a one-liner setup script)!
----
+## ⚙️ Step 3: Install All Dependencies
 
-## ⚙️ Step 4: Install All Dependencies
-
-Now, let uv install everything:
+Now let Python install everything Whisper needs:
 
 ```bash
-cd C:\WhisperMission
-uv pip install --system -r pyproject.toml
+pip install .
 ```
 
-This installs:
+✅ This installs:
+
 - 🧠 Whisper (the AI brain)
 - 🎤 Sound recording tools
 - 🎹 Keyboard listener
@@ -98,7 +82,7 @@ This installs:
 
 ---
 
-## 🎞️ Step 5: Install FFmpeg (Audio Handler)
+## 🎞️ Step 4: Install FFmpeg (Audio Handler)
 
 Whisper needs a tool to **cut, convert, and slice audio files**. That's where `ffmpeg` comes in — your **cyber audio ninja**.
 
@@ -106,7 +90,7 @@ Whisper needs a tool to **cut, convert, and slice audio files**. That's where `f
 
 1. Go to: [https://www.gyan.dev/ffmpeg/builds/](https://www.gyan.dev/ffmpeg/builds/)
 2. Under "**Release builds**", click the **first ZIP link** under `ffmpeg-release-essentials.zip`
-3. Extract the zip somewhere (e.g., `C:\ffmpeg`)
+3. Extract the ZIP somewhere (e.g., `C:\ffmpeg`)
 4. Inside that folder, go into: `ffmpeg\bin\`
 5. Copy the full path of that folder (e.g., `C:\ffmpeg\bin`)
 
@@ -129,7 +113,7 @@ If you see a bunch of info — 🎉 FFmpeg is ready!
 
 ---
 
-## 💻 Step 6: Launch the Transcriber
+## 💻 Step 5: Launch the Transcriber
 
 You’re now ready to launch the GUI! Run:
 
@@ -138,6 +122,9 @@ python app.py
 ```
 
 🧠 You’ll see a small window:
+
+![Whisper Transcriber GUI](img/transcribe.png)
+
 - Choose a language (or keep **Autodetect**)
 - Pick a model like `base`, `small`, or `tiny` (smaller = faster, bigger = more accurate)
 - Press **Ctrl + Shift + Space** to start recording
@@ -146,7 +133,7 @@ python app.py
 
 ---
 
-## 📋 Step 7: Try It Out!
+## 📋 Step 6: Try It Out
 
 Open Notepad or Word.
 
