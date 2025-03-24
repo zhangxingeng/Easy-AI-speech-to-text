@@ -1,0 +1,29 @@
+[project]
+name = "transcribe-whisper"
+version = "0.1.0"
+authors = [
+    { name="Shane Zhang", email="zhangxingeng970221@gmail.com" }
+]
+
+description = "A minimal Python GUI app for transcribing audio to text using OpenAI’s Whisper."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "keyboard>=0.13.5",
+    "openai-whisper>=20240930",
+    "pyinstaller>=6.12.0",
+    "pyperclip>=1.9.0",
+    "scipy>=1.15.2",
+    "sounddevice>=0.5.1",
+    "torch>=2.2.0",
+    "torchaudio>=2.2.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[project.scripts]
+run = "python app.py"
+build = "pyinstaller --noconsole --name whisper_transcriber app.py"

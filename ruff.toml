@@ -1,0 +1,31 @@
+# Same as Black.
+line-length = 200
+indent-width = 4
+
+# Assume Python 3.11
+target-version = "py311"
+
+[lint]
+# Enable Pyflakes (`F`) and a subset of the pycodestyle (`E`)
+select = ["E", "F", "I", "DJ"]
+ignore = ["F401", "E731", "E701"]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Django plugin
+extend-select = ["DJ"]
+
+[format]
+# Use single quotes for strings.
+quote-style = "double"
+
+# Indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Automatically detect the appropriate line ending.
+line-ending = "auto" 

@@ -1,0 +1,37 @@
+{
+    "python.pythonPath": "C:\\Users\\shane\\miniconda3\\envs\\lightrag\\python.exe",
+    "python.defaultInterpreterPath": "C:\\Users\\shane\\miniconda3\\envs\\lightrag\\python.exe",
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "notebook.formatOnSave.enabled": true,
+    "notebook.codeActionsOnSave": {
+        "notebook.source.fixAll": "explicit",
+        "notebook.source.organizeImports": "explicit"
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.defaultFormatter":"charliermarsh.ruff",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.ruff":"explicit",
+            "source.organizeImports.ruff":"explicit"
+        },
+        "editor.rulers": [200],
+        "editor.tabSize": 4
+    },
+    "files.associations": {
+        "*.html": "html",
+        "*.js": "javascript",
+        "*.css": "css"
+    },
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "cSpell.words": [
+        "Chunker",
+        "dotenv",
+        "psycopg",
+        "pymupdf",
+        "tiktoken"
+    ],
+}
