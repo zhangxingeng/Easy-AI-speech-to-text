@@ -37,7 +37,7 @@ Download from [ffmpeg.org](https://ffmpeg.org/download.html) and make sure it's 
 Run the script:
 
 ```bash
-python whisper_gui.py
+python app.py
 ```
 
 - Use the GUI to select language and model
