@@ -64,14 +64,20 @@ Wait a moment... once complete, you now have a superfast installer 🚀
 
 ---
 
-## 📦 Step 3: Clone the Whisper Transcriber Source
+### 🧩 Step 3: Clone the Project from GitHub
 
-Download the code (aka mission source files).
+In **Command Prompt** or **PowerShell**, run:
 
-1. Create a folder anywhere you want, like `C:\WhisperMission`
-2. Save your `app.py` file there (this is your GUI script)
-3. Also save the `pyproject.toml` file in the same folder (this contains dependency info)
+```bash
+git clone https://github.com/zhangxingeng/whisper_voice_to_text_converter.git
+cd whisper_voice_to_text_converter
+```
 
+✅ This will download the full project including `app.py` and `pyproject.toml`.
+
+---
+
+Let me know if you want a script to automatically install everything after the clone (like a one-liner setup script)!
 ---
 
 ## ⚙️ Step 4: Install All Dependencies
