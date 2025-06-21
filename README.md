@@ -1,4 +1,4 @@
-# 🎙️ Whisper Transcriber
+# 🎙️ Simple Speeh To Text With AI
 
 A modern, feature-rich audio transcription application powered by OpenAI Whisper with real-time audio monitoring and intelligent state management.
 
