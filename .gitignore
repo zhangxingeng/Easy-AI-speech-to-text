@@ -5,6 +5,8 @@ build/
 dist/
 wheels/
 *.egg-info
+agent_guideline.md
+python_guideline.md
 
 # Virtual environments
 .venv

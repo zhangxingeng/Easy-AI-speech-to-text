@@ -1,6 +1,6 @@
 {
-    "python.pythonPath": "C:\\Users\\shane\\miniconda3\\envs\\lightrag\\python.exe",
-    "python.defaultInterpreterPath": "C:\\Users\\shane\\miniconda3\\envs\\lightrag\\python.exe",
+    "python.pythonPath": ".\\.venv\\Scripts\\python.exe",
+    "python.defaultInterpreterPath": ".\\.venv\\Scripts\\python.exe",
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,
     "notebook.formatOnSave.enabled": true,

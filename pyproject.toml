@@ -1,25 +1,40 @@
 [project]
 name = "transcribe-whisper"
 version = "0.1.0"
+description = ""
 authors = [
-    { name="Shane Zhang", email="zhangxingeng970221@gmail.com" }
+    {name = "Shane", email = "43120257+zhangxingeng@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "keyboard",
+    "numpy",
+    "pyperclip",
+    "scipy",
+    "sounddevice",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "openai-whisper",
+    "pydantic",
 ]
 
-description = "A minimal Python GUI app for transcribing audio to text using OpenAI’s Whisper."
-readme = "README.md"
-requires-python = ">=3.11"
-dependencies = [
-    "keyboard>=0.13.5",
-    "openai-whisper>=20240930",
-    "pyinstaller>=6.12.0",
-    "pyperclip>=1.9.0",
-    "scipy>=1.15.2",
-    "sounddevice>=0.5.1",
-    "torch>=2.2.0",
-    "torchaudio>=2.2.0",
-]
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
 
 [[tool.uv.index]]
 name = "pytorch-cu124"
 url = "https://download.pytorch.org/whl/cu124"
 explicit = true
+
+[tool.uv.sources]
+openai-whisper = { git = "https://github.com/openai/whisper.git" }
+torch = [
+  { index = "pytorch-cu124", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+torchvision = [
+  { index = "pytorch-cu124", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]

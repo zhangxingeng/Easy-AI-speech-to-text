@@ -1,4 +1,4 @@
---find-links https://download.pytorch.org/whl/cu126
+--find-links https://download.pytorch.org/whl/cu124
 torch
 torchaudio
 torchvision
